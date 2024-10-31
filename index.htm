@@ -1,0 +1,126 @@
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/img/MWS.png" type="image/x-icon">
+    <!-- import bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- import main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Data Mining Results</title>
+    <style>
+        p {
+            text-align: right;
+        }
+
+        pre {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start header  -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="text-capitalize">Data Mining results</h1>
+                <button type="button" class="btn btn-outline-success">
+                    <a class="link-light"
+                        href="https://colab.research.google.com/drive/1K3A4q-3Q4l2CJlPybe6p3hetQil5i5BE#scrollTo=ESjj2VE0pv1D"
+                        target="_blank"> Go To colab Jupyter notebook </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <main>
+        <div class="container my-3">
+            <h2 class="text-center mb-3">مصفوفة الارتباط</h2>
+            <div class="row">
+                <div class="col-md-6 my-3">
+                    <img src="assets/img/corr.png" class="w-100" />
+                </div>
+                <div class="col-md-6 my-3">
+                    <img src="assets/img/corr2.png" class="w-100" />
+                </div>
+                <h2 class="text-center my-3">توزع الاصناف </br>
+                     الموازنة باستخدام مكتبة Smote 
+                </h2>
+                <div class="col-md-4 my-3">
+                    <h3 class="text-center my-3">Before</h3>
+                    <img src="assets/img/output1.png" class="w-100" />
+                </div>
+                <div class="col-md-4">
+                    <p class="my-3">   </p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-center my-3">After</h3>
+                        <img src="assets/img/output2.png" class="w-100" />
+                </div>
+                <div>
+                    <p> </br> </p>
+                </div>
+            
+                <div class="table-responsive">
+                    <table class="table table-primary">
+                        <thead>
+                            <tr>
+                                <th scope="col">Logistic Regression</th>
+                                <th scope="col">Decision Tree</th>
+                                <th scope="col">Naive Bayes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td scope="row"><img src="assets/img/lr.png" class="img-fluid" alt=""></td>
+                                <td><img src="assets/img/dt.png" class="img-fluid" alt=""></td>
+                                <td><img src="assets/img/nb.png" class="img-fluid" alt=""></td>
+                            </tr>
+                         
+                            <tr>
+
+                                <td scope="row" colspan="3">
+                                    <img src="assets/img/res.png" class="w-100" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td scope="row" colspan="3">
+                                    <img src="assets/img/res1.png" class="w-100" alt="">
+                                </td>
+                            </tr>
+
+                           
+                            <tr class="">
+                                <td scope="row" colspan="3">
+                                    <div class="col-md-12 my-3">
+                                        <h2>نتائج التحليل:</h2>
+                                        <p> يمكننا استنتاج من النتائج السابقة أن نموذج شجرة القرار (Decision Tree) يحقق أداءً أفضل بكثير، ويعود ذلك لقدرته على اكتشاف العلاقات غير الخطية بين الميزات. على عكس نموذج الانحدار الخطي الذي يعتمد على فرضية وجود علاقة خطية بين المتغيرات، مما يجعله غير فعال في التعامل مع البيانات ذات التوزيعات الأكثر تعقيدًا. من ناحية أخرى، يفترض نموذج GaussianNB أن المتغيرات مستقلة عن بعضها البعض، مما قد يقيد أداؤه أيضًا. علاوة على ذلك، أظهرت مصفوفة الارتباط وجود علاقة خطية ضعيفة بين المتغيرات، مما يعني أن نموذج الانحدار اللوجستي قد يفسر العلاقات بشكل غير دقيق، مما يؤدي إلى النتائج الضعيفة التي حصلنا عليها. وبالتالي، يصبح نموذج شجرة القرار هو الخيار الأمثل في هذه الحالة، حيث إنه قادر على التعامل مع العلاقات غير الخطية بكفاءة وتحقيق دقة أعلى. </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- start footer  -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p class="text-center m-0">All Rights Reseved &copy; Web Data Mining 2024</p>
+        </div>
+    </footer>
+    <!-- end footer  -->
+    <!-- import bootstrap js  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
